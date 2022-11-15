@@ -7,3 +7,9 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v3
+      - name: Lint Project
+        run: npm run lint
+      - name: Test Project
+        run: npm test
+      - name: Build Project
+        run: npm build
