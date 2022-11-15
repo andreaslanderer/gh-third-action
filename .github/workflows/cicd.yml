@@ -15,3 +15,10 @@ jobs:
         run: npm test
       - name: Build Project
         run: npm run build
+  deploy:
+    needs: test
+    name: Deploy the Project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Project
+        run: echo "Deploying Project..."
