@@ -3,7 +3,7 @@ on: push
 jobs:
   test:
     name: Build, Lint and Test the Project
-    runs-with: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
         uses: actions/checkout@v3
