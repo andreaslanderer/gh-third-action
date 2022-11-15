@@ -4,6 +4,6 @@ jobs:
   test:
     name: Build, Lint and Test the Project
     runs-with: ubuntu-latest
-    jobs:
+    steps:
       - name: Checkout Project
         uses: actions/checkout@v3
